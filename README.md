@@ -1,4 +1,4 @@
-тестовый проект API netCore
+тестовый проект API netCore  
 smtp не прикручивал. Результат смотрел  в debug html preview
 * добавить Csiki.RazortoStringRender.dll
 * добавить в **startup.cs**
