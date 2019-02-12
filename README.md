@@ -1,4 +1,4 @@
-
+* добавить Csiki.RazortoStringRender.dll
 * добавить в **startup.cs**
 
 public void ConfigureServices(IServiceCollection services){  
