@@ -1,0 +1,67 @@
+﻿@page
+@model RazorTest.Models.AuthorizationModel
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8">
+
+<html lang="ru">
+<head>
+    <meta content="date=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<body bgcolor="#FFFFFF" style="margin: 0; padding: 0;">
+    <table border=0 cellpadding=0 cellspacing=0 height="100%" lang="en-GB" style="min-width: 348px;" width="100%">
+        <Tbody>
+            <tr height=32px></tr>
+            <tr align=center>
+                <td>
+                    <div itemscope itemtype="//schema.org/EmailMessage">   kosarevDm@gmail.com</div>
+
+                    <table border=0 cellpadding=0 cellspacing=0 style="padding-bottom: 20px; max-width: 600px; min-width: 220px;">
+
+                        <Tbody>
+                            <tr>
+                                
+                                <td>
+                                    <table cellpadding=0 cellspacing=0>
+                                        <Tbody>
+                                            <tr><td></td><td><table border=0 cellpadding=0 cellspacing=0 style="direction: ltr; padding-bottom: 7px;" width="100%"><Tbody><tr><td align=left><img height=32 src="http://m.rushydro.ru/assets/logo.png" style="width: 92px; height: 32px;" width=92></td><td align=right style="font-family: Roboto-Light,Helvetica,Arial,sans-serif;">@Model.username</td><td align=right width=35><img height=28 src="https://www.gstatic.com/accountalerts/email/anonymous_profile_photo.png" style="width: 28px; height: 28px; border-radius: 50%;;" width=28></td></tr></Tbody></table></td><td></td></tr>
+                                            <tr><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-corner-nw.png&#39;) top left no-repeat;" width=6><div></div></td><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-pixel-n.png&#39;) top center repeat-x;"><div></div></td><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-corner-ne.png&#39;) top right no-repeat;" width=6><div></div></td></tr>
+                                            <tr>
+                                                <td style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-pixel-w.png&#39;) center left repeat-y;" width=6><div></div></td>
+                                                <td>
+                                                    <div style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif;padding-left: 20px; padding-right: 20px;border-bottom: thin solid #f0f0f0; color: rgba(0,0,0,0.87); font-size: 24px;padding-bottom: 38px;padding-top: 40px;text-align: center; word-break: break-word;">
+                                                        <div class=v2sp>
+                                                            <br><span style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-size: 16px; line-height: 1.8;">Логин: @Model.username</span>
+                                                            <span style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-size: 16px; line-height: 1.8;">Пароль: @Model.passw</span>
+                                                        </div>
+                                                    </div>
+                                                    <div style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 13px; color: rgba(0,0,0,0.87); line-height: 1.6;padding-left: 20px; padding-right: 20px;padding-bottom: 32px; padding-top: 24px;"><div class=v2sp>Вы прошли авторизацию.<div style="padding-top: 24px; text-align: center;"><a href="@Model.addesLink" style="display:inline-block; text-decoration: none;" target="_blank"><table border=0 cellpadding=0 cellspacing=0 style="background-color: #4184F3; border-radius: 2px; min-width: 90px;"><tbody><tr style="height: 6px;"></tr><tr><td style="padding-left: 8px; padding-right: 8px; text-align: center;"><a href="http://www.rushydro.ru" style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif; color: #ffffff; font-weight: 400; line-height: 20px; text-decoration: none;font-size: 13px;text-transform: uppercase;" target="_blank">Контроль активности</a></td></tr><tr style="height: 6px;"></tr></tbody></table></a></div></div></div>
+                                                </td>
+                                                <td style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-pixel-e.png&#39;) center left repeat-y;" width=6><div></div></td>
+                                            </tr>
+                                            <tr><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-corner-sw.png&#39;) top left no-repeat;" width=6><div></div></td><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-pixel-s.png&#39;) top center repeat-x"><div></div></td><td height=5 style="background:url(&#39;https://www.gstatic.com/accountalerts/email/hodor/4-corner-se.png&#39;) top left no-repeat;" width=6><div></div></td></tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div style="text-align: left;">
+                                                        <div style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 12px; line-height: 20px; padding-top: 10px;"><div>Мы направили Вам это сообщение, чтобы уведомить о важных изменениях в  регистрации на сайте Русгидро.</div><div style="direction: ltr;">&copy; 2018 ПАО "Русгидро",<a class=afal style="font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 12px; line-height: 20px; padding-top: 10px;">Москва,ул. Малая Дмитровка, д.7</a></div></div><div style="display: none !important; mso-hide:all; max-height:0px; max-width:0px;">
+                                                            1539581906000000
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </Tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </Tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr height=32px></tr>
+        </Tbody>
+    </table>
+</body>
+</html>
