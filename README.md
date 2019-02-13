@@ -7,7 +7,15 @@ public void ConfigureServices(IServiceCollection services){
       services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();  
        services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();  
        services.AddSingleton<IRazorPageToStringRenderer, RazorPageToStringRenderer>();       
-     }  
+ 
+ //для замены HEX кодировки (по умолчанию) в Unicode   
+ //https://docs.microsoft.com/en-us/aspnet/core/security/cross-site-scripting?view=aspnetcore-2.2
+     services.AddSingleton<HtmlEncoder>(
+   HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.BasicLatin,
+                                               UnicodeRanges.Cyrillic
+  }));
+ 
+ }  
    
 * расширение view  shtml/html  не  имеет значение.
 * первая директива @Page обязательна
@@ -19,3 +27,4 @@ async Task<string> Test() {
     string body = await renderer.RenderToStringAsync("/Views/Email/Authorization.html", new AuthorizationModel());  
     return body;  
 }
+

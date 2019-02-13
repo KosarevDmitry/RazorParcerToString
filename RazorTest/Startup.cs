@@ -13,7 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Csiki.RazortoStringRender;
-
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 
 namespace RazorTest
 {
@@ -33,6 +34,10 @@ namespace RazorTest
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddSingleton<IRazorPageToStringRenderer, RazorPageToStringRenderer>();
 
+            services.AddSingleton<HtmlEncoder>(
+   HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.BasicLatin,
+                                               UnicodeRanges.Cyrillic
+  }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
