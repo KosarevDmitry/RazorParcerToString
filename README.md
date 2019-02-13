@@ -9,7 +9,7 @@ public void ConfigureServices(IServiceCollection services){
        services.AddSingleton<IRazorPageToStringRenderer, RazorPageToStringRenderer>();       
  
  //для замены HEX кодировки (по умолчанию) в Unicode   
- //https://docs.microsoft.com/en-us/aspnet/core/security/cross-site-scripting?view=aspnetcore-2.2
+ //https://docs.microsoft.com/en-us/aspnet/core/security/cross-site-scripting?view=aspnetcore-2.2  
      services.AddSingleton<HtmlEncoder>(
    HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.BasicLatin,
                                                UnicodeRanges.Cyrillic
