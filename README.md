@@ -1,7 +1,7 @@
 **тестовый** проект API netCore  
-smtp не прикручивал. Результат смотрел  в debug html preview
-* добавить Csiki.RazortoStringRender.dll
-* добавить в **startup.cs**
+smtp don't binded. Result is good.
+* addь Csiki.RazortoStringRender.dll
+* add  **startup.cs**
 
 public void ConfigureServices(IServiceCollection services){  
       services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();  
